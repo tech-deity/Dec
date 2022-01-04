@@ -2,10 +2,10 @@ package com.example.dec
 
 import androidx.lifecycle.ViewModel
 
-class MainViewModel :ViewModel(){
+class MainViewModel(val initalval:Int) :ViewModel(){
 
 
-    var count :Int =0
+    var count :Int =initalval
     fun increment(){
         count++
     }
